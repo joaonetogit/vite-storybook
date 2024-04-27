@@ -1,15 +1,15 @@
-import { Button } from "@/components/Button";
-import type { Meta, StoryObj } from "@storybook/react";
+import { Button } from '@/components/Button';
+import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
-  title: "Components/Button",
+  title: 'Components/Button',
   component: Button,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   args: {
-    children: "Button",
+    children: 'Button',
     disabled: false,
-    size: "default",
-    variant: "default",
+    size: 'default',
+    variant: 'default',
   },
   argTypes: {
     asChild: {
@@ -18,33 +18,25 @@ const meta = {
       },
     },
     disabled: {
-      control: "boolean",
+      control: 'boolean',
     },
     size: {
-      options: ["default", "sm", "md", "lg", "icon"],
-      control: "select",
+      options: ['default', 'sm', 'md', 'lg', 'icon'],
+      control: 'select',
       table: {
         type: {
-          summary: "enum (string)",
+          summary: 'enum (string)',
           detail: '"default" | "sm" | "md" | "lg" | "icon"',
         },
       },
     },
     variant: {
-      options: [
-        "default",
-        "destructive",
-        "secondary",
-        "outline",
-        "ghost",
-        "link",
-      ],
-      control: "select",
+      options: ['default', 'destructive', 'secondary', 'outline', 'ghost', 'link'],
+      control: 'select',
       table: {
         type: {
-          summary: "enum (string)",
-          detail:
-            '"default" | "destructive" | "secondary" | "outline" | "ghost" | "link"',
+          summary: 'enum (string)',
+          detail: '"default" | "destructive" | "secondary" | "outline" | "ghost" | "link"',
         },
       },
     },
@@ -57,14 +49,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    variant: "default",
-    children: "Primary Button",
+    variant: 'default',
+    children: 'Primary Button',
   },
 };
 
 export const Secondary: Story = {
   args: {
-    variant: "secondary",
-    children: "Secondary Button",
+    variant: 'secondary',
+    children: 'Secondary Button',
   },
 };
